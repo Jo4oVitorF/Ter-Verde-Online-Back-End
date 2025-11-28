@@ -1,0 +1,22 @@
+{
+  "name": "mvp-back-end-tereverde",
+  "version": "1.0.0",
+  "description": "Protótipo Web para Ecoturismo e Biodiversidade.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {}
+}

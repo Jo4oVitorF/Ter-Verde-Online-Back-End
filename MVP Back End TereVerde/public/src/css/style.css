@@ -1,0 +1,62 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+.app-shell {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 0.5rem;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.modal {
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    #atracoes-lista,
+    #eventos-lista {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    #atracoes-lista img,
+    #eventos-lista img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+#bottom-nav {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+#bottom-nav .nav-button.active {
+    color: #15803d;
+}
